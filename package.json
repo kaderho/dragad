@@ -1,12 +1,14 @@
 {
   "name": "drag-and-drop",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-boundle" : "vue-cli-service build --target lib --name dragDrop ./src/main.js"
   },
+  "main": "./dist/drag-and-drop.common.js",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^3.0.0-0"
